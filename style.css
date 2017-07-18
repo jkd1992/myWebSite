@@ -26,7 +26,7 @@ header img  {
 }
 
 nav {
-   
+   overflow: hidden;
    
 }
 
@@ -39,12 +39,26 @@ nav a{
     text-align: center;
     text-decoration: none;
     background-color: darkcyan;
+    padding: 15px 30px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
     
 }
 
 a.menu:hover{
     background-color: red;
 }
+
+@media(max-width:800px){
+    nav a {
+        width: 50%;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+
 .active{
     background-color: crimson;
 }
